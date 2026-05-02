@@ -1,0 +1,603 @@
+{
+  "profile": [
+    {
+      "id": 1,
+      "user": {
+        "id": 101,
+        "username": "Vishinyx",
+        "nickname": "ꪜỉకꫝỉ 🥷",
+        "profile_pic": "/assets/profile/profile.jpeg",
+        "post": 5,
+        "followers": 995,
+        "following": 421
+      },
+      "highlights": [
+        {
+          "highlights_id": 1,
+          "highlights_dp": "/assets/highlights_dp/me.jpg",
+          "highlights_name":"Me",
+          "hl_stories": [
+            {
+              "image1": "/assets/post/p-abi.jpeg"
+            },
+            {
+              "image2": "/assets/post/p-abi.jpeg"
+            }  
+          ]
+        },
+        {
+          "highlights_id": 2,
+          "highlights_dp": "/assets/highlights_dp/homies.jpg",
+          "highlights_name":"Homies",
+          "hl_stories": [
+            {
+              "image1": "/assets/post/p-abi.jpeg"
+            }
+          ]
+        },
+        {
+          "highlights_id": 3,
+          "highlights_dp": "/assets/highlights_dp/travel.jpg",
+          "highlights_name":"Travel",
+          "hl_stories": [
+            {
+              "image1": "/assets/post/p-abi.jpeg"
+            }
+          ]
+        },
+        {
+          "highlights_id": 4,
+          "highlights_dp": "/assets/highlights_dp/friends.jpg",
+          "highlights_name":"Frnds",
+          "hl_stories": [
+            {
+              "image1": "/assets/post/p-abi.jpeg"
+            }
+          ]
+        },
+        {
+          "highlights_id": 5,
+          "highlights_dp": "/assets/highlights_dp/moments.png",
+          "highlights_name":"Moments",
+          "hl_stories": [
+            {
+              "image1": "/assets/post/p-abi.jpeg"
+            }
+          ]
+        },
+        {
+          "highlights_id": 6,
+          "highlights_dp": "/assets/highlights_dp/family.jpg",
+          "highlights_name":"Fam",
+          "hl_stories": [
+            {
+              "image1": "/assets/post/p-abi.jpeg"
+            }
+          ]
+        },
+        {
+          "highlights_id": 7,
+          "highlights_dp": "/assets/highlights_dp/subramani.jpg",
+          "highlights_name":"subramani",
+          "hl_stories": [
+            {
+              "image1": "/assets/post/p-abi.jpeg"
+            }
+          ]
+        }
+      ],
+      "profilePosts": [
+         {
+          "profile_post_id": 1,
+          "profile_post": "/assets/profile/post/post1.jpeg",
+          "profile_post_like":"59",
+          "profile_post_comment":"44"
+        },
+        {
+          "profile_post_id": 2,
+          "profile_post": "/assets/profile/post/post2.jpeg",
+          "profile_post_like":"149K",
+          "profile_post_comment":"404"
+        },
+        {
+          "profile_post_id": 3,
+          "profile_post": "/assets/profile/post/post3.jpeg",
+          "profile_post_like":"149K",
+          "profile_post_comment":"404"
+        },
+        {
+          "profile_post_id": 4,
+          "profile_post": "/assets/profile/post/post4.jpeg",
+          "profile_post_like":"149K",
+          "profile_post_comment":"404"
+        },
+        {
+          "profile_post_id": 5,
+          "profile_post": "/assets/profile/post/post5.jpeg",
+          "profile_post_like":"149K",
+          "profile_post_comment":"404"
+        }
+      ]
+    }
+  ],
+  "stories": [
+    {
+      "id": 1,
+      "user": {
+        "id": 101,
+        "username": "happy_soul_abi_45",
+        "nickname": "𝘼𝙗𝙞𝙨𝙝𝙚𝙠 𝙢𝙖𝙣𝙞❤ ⃝🕊",
+        "profile_pic": "/assets/story-dp/abi.jpg"
+      },
+      "stories": [
+        {
+          "image": "/assets/post/p-abi.jpeg"
+        },
+        {
+          "image": "/assets/post/p-abi2.jpeg"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "user": {
+        "id": 102,
+        "username": "always_anand_46",
+        "nickname": "Anand❤️‍🔥",
+        "profile_pic": "/assets/story-dp/anand.jpg"
+      },
+      "stories": [
+        {
+          "image": "/assets/post/p-anand.jpeg"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "user": {
+        "id": 103,
+        "username": "s_s_avinash_",
+        "nickname": "Spidy",
+        "profile_pic": "/assets/story-dp/avi.jpg"
+      },
+      "stories": [
+        {
+          "image": "/assets/post/p-avi.jpeg"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "user": {
+        "id": 104,
+        "username": "b_e_a_s_t__.ism",
+        "nickname": "Bala Kumaran ⚡",
+        "profile_pic": "/assets/story-dp/bala.jpg"
+      },
+      "stories": [
+        {
+          "image": "/assets/post/p-bala.jpeg"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "user": {
+        "id": 105,
+        "username": "deena_2503",
+        "nickname": "Deena",
+        "profile_pic": "/assets/story-dp/deena.jpg"
+      },
+      "stories": [
+        {
+          "image": "/assets/post/p-deena.jpeg"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "user": {
+        "id": 106,
+        "username": "ganesh_jpg_",
+        "nickname": "ᴾᴿᴬᴮᴴᵁ‼️",
+        "profile_pic": "/assets/story-dp/ganesh.jpg"
+      },
+      "stories": [
+        {
+          "image": "/assets/post/p-ganesh.jpeg"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "user": {
+        "id": 107,
+        "username": "harxxs_",
+        "nickname": "ஹரீஸ் 🩷💫",
+        "profile_pic": "/assets/story-dp/harees.jpg"
+      },
+      "stories": [
+        {
+          "image": "/assets/post/p-harees.jpeg"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "user": {
+        "id": 108,
+        "username": "__.hari.____",
+        "nickname": "𝐻𝓪𝓻𝓲",
+        "profile_pic": "/assets/story-dp/hari.jpg"
+      },
+      "stories": [
+        {
+          "image": "/assets/post/p-hari.jpeg"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "user": {
+        "id": 109,
+        "username": "smart_dq_",
+        "nickname": "🤍ℕ𝕀𝕊ℍ𝔸𝕋ℍ𝔸ℕ🤍",
+        "profile_pic": "/assets/story-dp/nish.jpg"
+      },
+      "stories": [
+        {
+          "image": "/assets/post/p-nish.jpeg"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "user": {
+        "id": 110,
+        "username": "_itz.gokul___",
+        "nickname": "₲Ø₭ɄⱠ",
+        "profile_pic": "/assets/story-dp/perumal.jpg"
+      },
+      "stories": [
+        {
+          "image": "/assets/post/p-perumal.jpeg"
+        }
+      ]
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "user": {
+        "id": 101,
+        "username": "happy_soul_abi_45",
+        "nickname": "𝘼𝙗𝙞𝙨𝙝𝙚𝙠 𝙢𝙖𝙣𝙞❤ ⃝🕊",
+        "profile_pic": "/assets/story-dp/abi.jpg"
+      },
+      "place": "Madurai",
+      "image": "/assets/post/p-abi.jpeg",
+      "caption": "Kodai hills🌅 #nature",
+      "likes": "120k",
+      "comments": [
+        {
+          "user": "alice_wonder",
+          "comment": "Wow! Amazing shot! 📸"
+        },
+        {
+          "user": "mark_92",
+          "comment": "Where is this place?"
+        }
+      ],
+      "repost": "400k",
+      "share": "1M",
+      "timestamp": "2025-02-11T14:30:00Z"
+    },
+    {
+      "id": 2,
+      "user": {
+        "id": 102,
+        "username": "always_anand_46",
+        "nickname": "Anand❤️‍🔥",
+        "profile_pic": "/assets/story-dp/anand.jpg"
+      },
+      "place": "Hyderadad",
+      "image": "/assets/post/p-anand.jpeg",
+      "caption": "Beach day 🏖️🌊",
+      "likes": 85,
+      "comments": [
+        {
+          "user": "john_doe",
+          "comment": "Perfect start of the day!"
+        }
+      ],
+      "repost": 7,
+      "share": "45k",
+      "timestamp": "2025-02-12T08:15:00Z"
+    },
+    {
+      "id": 3,
+      "user": {
+        "id": 109,
+        "username": "smart_dq_",
+        "nickname": "🤍ℕ𝕀𝕊ℍ𝔸𝕋ℍ𝔸ℕ🤍",
+        "profile_pic": "/assets/story-dp/nish.jpg"
+      },
+      "place": "Dindigul",
+      "image": "/assets/post/p-nish.jpeg",
+      "caption": "Homie gang 💪🔥",
+      "likes": 200,
+      "comments": [
+        {
+          "user": "john_doe",
+          "comment": "Beast mode!"
+        },
+        {
+          "user": "alice_wonder",
+          "comment": "Keep pushing 💯"
+        }
+      ],
+      "repost": "25k",
+      "share": "56",
+      "timestamp": "2025-02-13T18:00:00Z"
+    },
+    {
+      "id": 4,
+      "user": {
+        "id": 107,
+        "username": "harxxs_",
+        "nickname": "ஹரீஸ் 🩷💫",
+        "profile_pic": "/assets/story-dp/harees.jpg"
+      },
+      "place": "Madurai",
+      "image": "/assets/post/p-harees.jpeg",
+      "caption": "Dynamic Duo",
+      "likes": "310k",
+      "comments": [
+        {
+          "user": "john_doe",
+          "comment": "Looks fun!"
+        }
+      ],
+      "repost": 40,
+      "share": 14,
+      "timestamp": "2025-02-14T11:45:00Z"
+    },
+    {
+      "id": 5,
+      "user": {
+        "id": 106,
+        "username": "ganesh_jpg_",
+        "nickname": "ᴾᴿᴬᴮᴴᵁ‼️",
+        "profile_pic": "/assets/story-dp/ganesh.jpg"
+      },
+      "place": "Pollachi",
+      "image": "/assets/post/p-ganesh.jpeg",
+      "caption": "Idli kadai",
+      "likes": 150,
+      "comments": [
+        {
+          "user": "alice_wonder",
+          "comment": "Respect 😄"
+        },
+        {
+          "user": "emma_21",
+          "comment": "Don't forget to sleep!"
+        }
+      ],
+      "repost": 250,
+      "share": "12k",
+      "timestamp": "2025-02-15T23:10:00Z"
+    },
+    {
+      "id": 6,
+      "user": {
+        "id": 103,
+        "username": "s_s_avinash_",
+        "nickname": "Spidy",
+        "profile_pic": "/assets/story-dp/avi.jpg"
+      },
+      "place": "Madurai",
+      "image": "/assets/post/p-avi.jpeg",
+      "caption": "Movie Vibes",
+      "likes": 150,
+      "comments": [
+        {
+          "user": "alice_wonder",
+          "comment": "Respect 😄"
+        },
+        {
+          "user": "emma_21",
+          "comment": "Don't forget to sleep!"
+        }
+      ],
+      "repost": 250,
+      "share": "12k",
+      "timestamp": "2025-02-15T23:10:00Z"
+    },
+    {
+      "id": 7,
+      "user": {
+        "id": 104,
+        "username": "b_e_a_s_t__.ism",
+        "nickname": "Bala Kumaran ⚡",
+        "profile_pic": "/assets/story-dp/bala.jpg"
+      },
+      "place": "Dindigul",
+      "image": "/assets/post/p-bala.jpeg",
+      "caption": "kadavule ajithe",
+      "likes": 150,
+      "comments": [
+        {
+          "user": "alice_wonder",
+          "comment": "Respect 😄"
+        },
+        {
+          "user": "emma_21",
+          "comment": "Don't forget to sleep!"
+        }
+      ],
+      "repost": 250,
+      "share": "12k",
+      "timestamp": "2025-02-15T23:10:00Z"
+    },
+    {
+      "id": 8,
+      "user": {
+        "id": 105,
+        "username": "deena_2503",
+        "nickname": "Deena",
+        "profile_pic": "/assets/story-dp/deena.jpg"
+      },
+      "place": "Dindigul",
+      "image": "/assets/post/p-deena.jpeg",
+      "caption": "summa",
+      "likes": 150,
+      "comments": [
+        {
+          "user": "alice_wonder",
+          "comment": "Respect 😄"
+        },
+        {
+          "user": "emma_21",
+          "comment": "Don't forget to sleep!"
+        }
+      ],
+      "repost": 250,
+      "share": "12k",
+      "timestamp": "2025-02-15T23:10:00Z"
+    },
+    {
+      "id": 9,
+      "user": {
+        "id": 109,
+        "username": "__.hari.____",
+        "nickname": "𝐻𝓪𝓻𝓲",
+        "profile_pic": "/assets/story-dp/hari.jpg"
+      },
+      "place": "Madurai",
+      "image": "/assets/post/p-hari.jpeg",
+      "caption": "Boat ride",
+      "likes": 150,
+      "comments": [
+        {
+          "user": "alice_wonder",
+          "comment": "Respect 😄"
+        },
+        {
+          "user": "emma_21",
+          "comment": "Don't forget to sleep!"
+        }
+      ],
+      "repost": 250,
+      "share": "12k",
+      "timestamp": "2025-02-15T23:10:00Z"
+    },
+    {
+      "id": 10,
+      "user": {
+        "id": 110,
+        "username": "_itz.gokul___",
+        "nickname": "₲Ø₭ɄⱠ",
+        "profile_pic": "/assets/story-dp/perumal.jpg"
+      },
+      "place": "Madurai",
+      "image": "/assets/post/p-perumal.jpeg",
+      "caption": "NTK Thalapathis",
+      "likes": 150,
+      "comments": [
+        {
+          "user": "alice_wonder",
+          "comment": "Respect 😄"
+        },
+        {
+          "user": "emma_21",
+          "comment": "Don't forget to sleep!"
+        }
+      ],
+      "repost": 250,
+      "share": "12k",
+      "timestamp": "2025-02-15T23:10:00Z"
+    }
+  ],
+  "suggestions": [
+    {
+      "id": 1,
+      "user": {
+        "id": 105,
+        "username": "deena_2503",
+        "nickname": "Deena",
+        "profile_pic": "/assets/story-dp/deena.jpg"
+      },
+      "image": "/assets/post.jpg"
+    },
+    {
+      "id": 2,
+      "user": {
+        "id": 106,
+        "username": "ganesh_jpg_",
+        "nickname": "ᴾᴿᴬᴮᴴᵁ‼️",
+        "profile_pic": "/assets/story-dp/ganesh.jpg"
+      },
+      "image": "/assets/post.jpg"
+    },
+    {
+      "id": 3,
+      "user": {
+        "id": 107,
+        "username": "harxxs_",
+        "nickname": "ஹரீஸ் 🩷💫",
+        "profile_pic": "/assets/story-dp/harees.jpg"
+      },
+      "image": "/assets/post.jpg"
+    },
+    {
+      "id": 4,
+      "user": {
+        "id": 108,
+        "username": "__.hari.____",
+        "nickname": "𝐻𝓪𝓻𝓲",
+        "profile_pic": "/assets/story-dp/hari.jpg"
+      },
+      "image": "/assets/post.jpg"
+    },
+    {
+      "id": 5,
+      "user": {
+        "id": 109,
+        "username": "smart_dq_",
+        "nickname": "🤍ℕ𝕀𝕊ℍ𝔸𝕋ℍ𝔸ℕ🤍",
+        "profile_pic": "/assets/story-dp/nish.jpg"
+      },
+      "image": "/assets/post.jpg"
+    }
+  ],
+  "messages": [
+    {
+      "id": 1,
+      "user_1": {
+        "id": 101,
+        "username": "happy_soul_abi_45",
+        "nickname": "𝘼𝙗𝙞𝙨𝙝𝙚𝙠 𝙢𝙖𝙣𝙞❤ ⃝🕊",
+        "profile_pic": "/assets/story-dp/abi.jpg"
+      }
+    },
+    {
+      "id": 2,
+      "user_2": {
+        "id": 102,
+        "username": "always_anand_46",
+        "nickname": "Anand❤️‍🔥",
+        "profile_pic": "/assets/story-dp/anand.jpg"
+      }
+    },
+    {
+      "id": 3,
+      "user_3": {
+        "id": 103,
+        "username": "s_s_avinash_",
+        "nickname": "Spidy",
+        "profile_pic": "/assets/story-dp/avi.jpg"
+      }
+    }
+  ]
+}
