@@ -1,3 +1,3 @@
-const API = "http://localhost:10000";
+const API = "https://instagram-clone-cxik.onrender.com";
 
 export default API;
