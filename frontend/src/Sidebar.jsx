@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import useFetch from './useFetch';
-import instaIcon from '../db/assets/instaIcon.png'
+import instaIcon from './assets/instaIcon.png'
 import { useNavigate } from 'react-router-dom';
 import API from './api'; // ✅ NEW
 

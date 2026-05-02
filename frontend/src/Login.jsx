@@ -1,7 +1,7 @@
-import logo from '../db/assets/instaLogo.png'
-import img from '../db/assets/xx.webp'
-import meta from '../db/assets/meta-logo.png'
-import fb from '../db/assets/fb.png'
+import logo from './assets/instaLogo.png'
+import img from './assets/xx.webp'
+import meta from './assets/meta-logo.png'
+import fb from './assets/fb.png'
 import { useNavigate } from 'react-router-dom'
 
 function Login() {
