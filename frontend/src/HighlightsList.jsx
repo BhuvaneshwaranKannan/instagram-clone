@@ -1,7 +1,7 @@
 import React, { useRef, useState, useEffect } from 'react';
 import useFetch from './useFetch';
 import Highlights from './Highlights';
-import plusIcon from '../db/assets/plus_icon.jpg';
+import plusIcon from './assets/plus_icon.jpg';
 import API from './api'; 
 
 function HighlightsList() {

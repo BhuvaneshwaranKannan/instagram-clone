@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import useFetch from './useFetch';
 import API from './api'; // ✅ NEW
-import instaIcon from '../db/assets/instaIcon.png'; // ✅ use import instead
+import instaIcon from './assets/instaIcon.png';
 
 function SuggestionProfile() {
 
