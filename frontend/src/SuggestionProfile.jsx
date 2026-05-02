@@ -2,8 +2,11 @@ import React, { useState } from 'react'
 import useFetch from './useFetch';
 import API from './api'; // ✅ NEW
 import instaIcon from './assets/instaIcon.png';
+import { useNavigate } from 'react-router-dom';
 
 function SuggestionProfile() {
+
+  const navigate = useNavigate();
 
   // ✅ FIX 1 — API
   const [list] = useFetch(`${API}/profile`);
@@ -22,7 +25,7 @@ function SuggestionProfile() {
 
         <div className="d-flex align-items-center mx-2">
 
-          <div className="suggest-dp mx-2">
+          <div className="suggest-dp mx-2" onClick={()=>navigate('/profile')}>
 
             {/* 🔥 FIX 2 */}
             <img 
@@ -34,7 +37,7 @@ function SuggestionProfile() {
           </div>
 
           <div className="d-flex flex-column">
-            <div className="d-flex align-items-center gap-1">
+            <div className="d-flex align-items-center gap-1"  onClick={()=>navigate('/profile')}>
               <h6 className='mb-0'>{user.username}</h6>
             </div>
             <small className='grey-color'>{user.nickname}</small>
@@ -54,38 +57,24 @@ function SuggestionProfile() {
         {
           switchAcc && (
             <div className="overlay" onClick={() => setSwitchAcc(false)}>
-
               <div className="switch-optionBox" onClick={(e) => e.stopPropagation()}>
 
-                {/* 🔥 FIX 3 */}
-                <img 
-                  src={instaIcon} 
-                  alt="Instagram" 
-                  className="switch-instaName my-5" 
-                />
+                <img src="../db/assets/insta_name.png" alt="Instagram" className="switch-instaName my-5" />
 
                 <div className="switch-login-box">
-
-                  <div className="input-group input-group-sm mb-3">
-                    <input 
-                      type="text" 
-                      className="form-control" 
-                      placeholder="Phone number, username, or email" 
-                    />
+                  <div class="input-group input-group-sm mb-3">
+                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="Phone number, username, or email" />
+                  </div>
+                  <div class="input-group input-group-sm mb-3">
+                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="password" />
                   </div>
 
-                  <div className="input-group input-group-sm mb-3">
-                    <input 
-                      type="text" 
-                      className="form-control" 
-                      placeholder="password" 
-                    />
-                  </div>
-
-                  <div className="form-check">
-                    <input className="form-check-input" type="checkbox" />
-                    <label className="form-check-label">
-                      <small>Save login info</small>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required />
+                    <label class="form-check-label">
+                      <small>
+                        Save login info
+                      </small>
                     </label>
                   </div>
 
@@ -93,14 +82,13 @@ function SuggestionProfile() {
                     Log in
                   </button>
 
-                  <div className="text-center w-100 mt-3 switch-fp">
-                    <small>Forget Password?</small>
+                  <div className="text-center w-100 mt-3 switch-fp ">
+                    <small>
+                      Forget Password?
+                    </small>
                   </div>
-
                 </div>
-
               </div>
-
             </div>
           )
         }

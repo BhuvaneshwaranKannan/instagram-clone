@@ -138,14 +138,32 @@ function Post(props) {
               <small>
                 <span>
                   {props.caption}
-                  ...<small className='captionMore text-muted'><span>more</span></small>
                 </span>
+                  ...<small className='captionMore text-muted'><span>more</span></small>
               </small>
             </p>
           </div>
 
         </div>
       </div>
+
+      {
+        option && (
+          <div className="overlay" onClick={() => setOption(false)}>
+            <div className="optionBox" onClick={(e) => e.stopPropagation()}>
+              <div className="optionItem option-report">Report</div>
+              <div className="optionItem option-unfollow" onClick={()=> {setUnfollowBox(true); setOption(false);}}>Unfollow</div>
+              <div className="optionItem">Add to favourites</div>
+              <div className="optionItem">Go to post</div>
+              <div className="optionItem">Share to</div>
+              <div className="optionItem">Copy link</div>
+              <div className="optionItem">Embed</div>
+              <div className="optionItem">About this account</div>
+              <div className="optionItem cancel" onClick={() => setOption(false)}>Cancel</div>
+            </div>
+          </div>
+        )
+      }
 
       {/* UNFOLLOW BOX */}
       {

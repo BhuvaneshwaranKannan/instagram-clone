@@ -161,6 +161,37 @@ function Sidebar() {
 
             </div>
 
+            {
+                metaOption && (
+                    <div className="MetaOverlay" onClick={() => setMetaOption(false)}>
+                        <div className="MetaoptionBox" onClick={(e) => e.stopPropagation()}>
+                            <div className="MetaOptionItem">Meta AI</div>
+                            <div className="MetaOptionItem">AI Studio</div>
+                            <div className="MetaOptionItem">WhatsApp</div>
+                            <div className="MetaOptionItem">Threads</div>
+                        </div>
+                    </div>
+                )
+            }
+
+            {
+                moreOption && (
+                    <div className="MoreOverlay" onClick={() => setMoreOption(false)}>
+                        <div className="MoreoptionBox" onClick={(e) => e.stopPropagation()}>
+                            <div className="MoreOptionItem">Settings</div>
+                            <div className="MoreOptionItem">Your Activity</div>
+                            <div className="MoreOptionItem">Saved</div>
+                            <div className="MoreOptionItem">Switch Apperance</div>
+                            <div className="MoreOptionItem">Report a Problem</div>
+                            <div className="MoreOptionItemflast my-2"></div>
+                            <div className="MoreOptionItem" onClick={() => setSwitchAcc(true)}>Switch Accounts</div>
+                            <div className="MoreOptionItemlast"></div>
+                            <div className="MoreOptionItem moreLogout" onClick={()=> navigate('/')}>Logout</div>
+                        </div>
+                    </div>
+                )
+            }
+
             {/* SWITCH ACCOUNT FIX */}
             {
                 switchAcc && (
