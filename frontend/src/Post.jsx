@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import API from './api'; // ✅ NEW
+import API from './api';
 
 function Post(props) {
 
@@ -29,7 +29,6 @@ function Post(props) {
       <div className='my-3'>
         <div className="card" style={{ width: "29.5rem" }}>
 
-          {/* HEADER */}
           <div className="d-flex align-items-center justify-content-between">
             <div className="d-flex align-items-center">
 
@@ -68,7 +67,6 @@ function Post(props) {
             </div>
           </div>
 
-          {/* POST IMAGE */}
           <div className="postImage my-2">
             {/* 🔥 FIX */}
             <img src={`${API}${props.image}`} alt="" />
@@ -83,7 +81,6 @@ function Post(props) {
             }
           </div>
 
-          {/* ACTIONS */}
           <div className="d-flex align-items-center justify-content-between">
             <div className="reaction d-flex align-items-center">
 
@@ -131,7 +128,6 @@ function Post(props) {
             </div>
           </div>
 
-          {/* CAPTION */}
           <div>
             <p className='mx-2'>
               {props.name}

@@ -5,11 +5,10 @@ import { useNavigate } from 'react-router-dom';
 import HighlightsList from './HighlightsList';
 import ProfilePost from './ProfilePost';
 import Messages from './Messages';
-import API from './api'; // ✅ NEW
+import API from './api';
 
 function Profile() {
 
-    // ✅ FIX 1 — use API
     const [list] = useFetch(`${API}/profile`);
 
     const [profileSettings, setProfileSettings] = useState(false);

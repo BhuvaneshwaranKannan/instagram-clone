@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import API from './api'; // ✅ NEW
+import API from './api';
 
 function Suggestion(props) {
 
@@ -12,7 +12,6 @@ function Suggestion(props) {
 
                     <div className="suggest-dp mx-2">
 
-                        {/* 🔥 FIX */}
                         <img 
                             className='profile-img' 
                             src={`${API}${props.dp}`} 

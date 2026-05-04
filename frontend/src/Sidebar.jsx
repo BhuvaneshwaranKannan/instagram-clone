@@ -2,11 +2,10 @@ import React, { useState } from 'react'
 import useFetch from './useFetch';
 import instaIcon from './assets/instaIcon.png'
 import { useNavigate } from 'react-router-dom';
-import API from './api'; // ✅ NEW
+import API from './api'; 
 
 function Sidebar() {
 
-    // ✅ FIX 1 — API
     const [list] = useFetch(`${API}/profile`);
 
     const [expanded, setExpand] = useState(false);
@@ -17,7 +16,7 @@ function Sidebar() {
     const navigate = useNavigate();
 
     if (!list || list.length === 0) {
-        return <div>Loading...</div>;
+        return <div></div>;
     }
 
     const user = list[0].user;
@@ -29,7 +28,6 @@ function Sidebar() {
                 onMouseEnter={() => setExpand(true)} 
                 onMouseLeave={() => setExpand(false)}
             >
-
                 {expanded ? (
                     <div>
 
@@ -73,7 +71,6 @@ function Sidebar() {
                                 <div className="sidebar-dp p-2">
                                     <div className="sidebar-story-ring">
 
-                                        {/* 🔥 FIX 2 */}
                                         <img className='sidebar-profile-img' src={`${API}${user.profile_pic}`} alt="" />
 
                                     </div>
@@ -138,7 +135,6 @@ function Sidebar() {
                                 <div className="sidebar-dp p-2">
                                     <div className="sidebar-story-ring">
 
-                                        {/* 🔥 FIX */}
                                         <img className='sidebar-profile-img' src={`${API}${user.profile_pic}`} alt="" />
 
                                     </div>
@@ -192,7 +188,6 @@ function Sidebar() {
                 )
             }
 
-            {/* SWITCH ACCOUNT FIX */}
             {
                 switchAcc && (
                     <div className="overlay" onClick={() => setSwitchAcc(false)}>

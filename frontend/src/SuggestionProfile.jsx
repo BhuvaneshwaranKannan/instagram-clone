@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import useFetch from './useFetch';
-import API from './api'; // ✅ NEW
+import API from './api';
 import instaIcon from './assets/instaIcon.png';
 import { useNavigate } from 'react-router-dom';
 
@@ -8,13 +8,12 @@ function SuggestionProfile() {
 
   const navigate = useNavigate();
 
-  // ✅ FIX 1 — API
   const [list] = useFetch(`${API}/profile`);
 
   const [switchAcc, setSwitchAcc] = useState(false);
 
   if (!list || list.length === 0) {
-    return <div>Loading...</div>;
+    return <div></div>;
   }
 
   const user = list[0].user;
@@ -27,7 +26,6 @@ function SuggestionProfile() {
 
           <div className="suggest-dp mx-2" onClick={()=>navigate('/profile')}>
 
-            {/* 🔥 FIX 2 */}
             <img 
               className='profile-img' 
               src={`${API}${user.profile_pic}`} 
@@ -59,7 +57,7 @@ function SuggestionProfile() {
             <div className="overlay" onClick={() => setSwitchAcc(false)}>
               <div className="switch-optionBox" onClick={(e) => e.stopPropagation()}>
 
-                <img src="../db/assets/insta_name.png" alt="Instagram" className="switch-instaName my-5" />
+                <img src={instaIcon} alt="Instagram" className="switch-instaName my-5" />
 
                 <div className="switch-login-box">
                   <div class="input-group input-group-sm mb-3">

@@ -1,10 +1,9 @@
 import React, { useEffect } from 'react';
 import useFetch from './useFetch';
-import API from './api'; // ✅ NEW
+import API from './api';
 
 function Messages() {
 
-  // ✅ FIX 1 — use API
   const [list] = useFetch(`${API}/messages`);
 
   useEffect(() => {
@@ -12,9 +11,8 @@ function Messages() {
     tooltipTriggerList.forEach(el => new window.bootstrap.Tooltip(el));
   }, []);
 
-  // ✅ FIX 2 — safe loading
   if (!list || list.length < 3) {
-    return <div>Loading...</div>;
+    return <div></div>;
   }
 
   const user1 = list[0];
@@ -39,7 +37,6 @@ function Messages() {
 
           <div className="d-flex align-items-center avatar-group">
 
-            {/* 🔥 FIX 3 — image prefix */}
             <img
               src={`${API}${user1.user_1.profile_pic}`}
               className="avatar"

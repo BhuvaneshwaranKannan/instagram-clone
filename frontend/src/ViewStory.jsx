@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import API from "./api"; // ✅ IMPORTANT
+import API from "./api"; 
 
 const STORY_DURATION = 5000;
 const TICK_MS = 50;
@@ -19,7 +19,6 @@ export default function ViewStory() {
   const touchStartX = useRef(null);
   const touchStartTime = useRef(null);
 
-  // ✅ FETCH STORIES
   useEffect(() => {
     fetch(`${API}/stories`)
       .then((r) => r.json())
@@ -39,7 +38,6 @@ export default function ViewStory() {
   const stories = currentUser?.stories || [];
   const currentStory = stories[storyIndex];
 
-  // ✅ PRELOAD NEXT IMAGE
   useEffect(() => {
     if (!currentUser) return;
 
@@ -101,7 +99,6 @@ export default function ViewStory() {
     navigate("/home");
   };
 
-  // ✅ PROGRESS TIMER
   useEffect(() => {
     clearTimer();
 
@@ -123,7 +120,6 @@ export default function ViewStory() {
     return clearTimer;
   }, [userIndex, storyIndex, isPaused, currentStory]);
 
-  // ✅ KEYBOARD NAVIGATION
   useEffect(() => {
     const onKey = (e) => {
       if (e.key === "ArrowRight") goNext();
@@ -135,7 +131,6 @@ export default function ViewStory() {
     return () => window.removeEventListener("keydown", onKey);
   }, [userIndex, storyIndex, allStories]);
 
-  // ✅ TOUCH HANDLING
   const onTouchStart = (e) => {
     touchStartX.current = e.touches[0].clientX;
     touchStartTime.current = Date.now();
@@ -177,7 +172,6 @@ export default function ViewStory() {
         onTouchStart={onTouchStart}
         onTouchEnd={onTouchEnd}
       >
-        {/* 🔥 FIXED IMAGE */}
         <img
           src={`${API}${currentStory.image}`}
           alt="story"
@@ -187,7 +181,6 @@ export default function ViewStory() {
         <div className="sv-gradient-top" />
         <div className="sv-gradient-bottom" />
 
-        {/* PROGRESS */}
         <div className="sv-progress-row">
           {stories.map((_, i) => (
             <div key={i} className="sv-progress-track">
@@ -206,12 +199,10 @@ export default function ViewStory() {
           ))}
         </div>
 
-        {/* HEADER */}
         <div className="sv-header">
           <div className="sv-user-info">
             <div className="sv-avatar-ring">
 
-              {/* 🔥 FIXED AVATAR */}
               <img
                 src={`${API}${currentUser.user.profile_pic}`}
                 alt={currentUser.user.username}
@@ -238,14 +229,12 @@ export default function ViewStory() {
           </button>
         </div>
 
-        {/* NAV AREAS */}
         {!(userIndex === 0 && storyIndex === 0) && (
           <div className="sv-nav sv-nav-left" onClick={goPrev} />
         )}
         <div className="sv-nav sv-nav-right" onClick={goNext} />
       </div>
 
-      {/* SIDE BUTTONS */}
       {!(userIndex === 0 && storyIndex === 0) && (
         <button className="sv-side-btn sv-side-prev" onClick={goPrev}>
           ‹

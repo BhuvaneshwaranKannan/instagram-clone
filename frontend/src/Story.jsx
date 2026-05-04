@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import API from './api'; // ✅ NEW
+import API from './api';
 
 function Story(props) {
     return (
@@ -12,7 +12,6 @@ function Story(props) {
                     <div className="story-dp-ring">
                         <div className="story-inner">
 
-                            {/* 🔥 FIX */}
                             <img 
                                 className="profile-img" 
                                 src={`${API}${props.dp}`} 

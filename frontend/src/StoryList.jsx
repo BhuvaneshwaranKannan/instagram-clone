@@ -1,11 +1,10 @@
 import React, { useRef, useState, useEffect } from 'react'
 import useFetch from './useFetch'
 import Story from './Story';
-import API from './api'; // ✅ NEW
+import API from './api'; 
 
 function StoryList() {
 
-    // ✅ FIX 1 — API
     const [list] = useFetch(`${API}/stories`);
 
     const storyRef = useRef();
@@ -34,7 +33,7 @@ function StoryList() {
     };
 
     useEffect(() => {
-        if (list?.length) checkScroll(); // ✅ safe
+        if (list?.length) checkScroll(); 
     }, [list]);
 
     return (
@@ -57,7 +56,7 @@ function StoryList() {
                         key={st.id}
                         id={st.id}
                         name={st.user.username}
-                        dp={st.user.profile_pic} // ✅ handled inside Story.jsx
+                        dp={st.user.profile_pic} 
                     />
                 ))}
             </div>

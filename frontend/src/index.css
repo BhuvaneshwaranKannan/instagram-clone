@@ -910,7 +910,8 @@ body {
 }
 
 .switch-instaName {
-  width: 30%;
+  width: 15%;
+  height: fit-content;
 }
 
 .switch-login-box {

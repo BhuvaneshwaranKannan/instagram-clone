@@ -2,24 +2,18 @@ import React from 'react'
 import useFetch from './useFetch'
 import Suggestion from './Suggestion';
 import SuggestionProfile from './SuggestionProfile';
-import API from './api'; // ✅ NEW
+import API from './api'; 
 
 function SuggestionList() {
 
-    // ✅ FIX 1 — use API
     const [list] = useFetch(`${API}/suggestions`);
-
-    // ✅ FIX 2 — safe handling
-    if (!list || list.length === 0) {
-        return <div>Loading...</div>;
-    }
 
     const suggestionList = list.map((s) => (
         <Suggestion
             key={s.id}
             id={s.id}
             name={s.user.username}
-            dp={s.user.profile_pic} // ✔ handled inside Suggestion.jsx
+            dp={s.user.profile_pic} 
         />
     ));
 

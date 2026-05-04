@@ -1,17 +1,11 @@
 import React from 'react'
 import useFetch from './useFetch';
 import Post from './Post'
-import API from './api'; // ✅ NEW
+import API from './api';
 
 function PostList() {
 
-    // ✅ FIX 1 — use API
     const [list] = useFetch(`${API}/posts`);
-
-    // ✅ FIX 2 — safe loading
-    if (!list || list.length === 0) {
-        return <div>Loading...</div>;
-    }
 
     const listOfPosts = list.map((p) => (
         <Post
@@ -23,7 +17,6 @@ function PostList() {
             image={p.image}
             likes={p.likes}
 
-            // ✅ FIX 3 — safe comments
             comments={p.comments ? p.comments.length : 0}
 
             repost={p.repost}
