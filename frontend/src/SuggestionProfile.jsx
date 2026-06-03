@@ -27,7 +27,7 @@ function SuggestionProfile() {
           <div className="suggest-dp mx-2" onClick={()=>navigate('/profile')}>
 
             <img 
-              className='profile-img' 
+              className='suggest-profile-img' 
               src={`${API}${user.profile_pic}`} 
               alt="" 
             />
