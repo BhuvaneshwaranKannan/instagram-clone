@@ -4,6 +4,32 @@ body {
   color: white;
 }
 
+/* Home Page Loading */
+
+
+.loadingPageInstaIcon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+}
+
+.loadingPageInstaIcon img {
+  width: 75px;
+}
+
+.loadingPageCaption {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.lpcFrom {
+  color: #737373;
+}
+
 /* Login Page */
 
 .container-fluid .row {
