@@ -491,6 +491,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
+}
+
+.suggest-name {
+  cursor: pointer;
 }
 
 .suggest-credits {

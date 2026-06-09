@@ -35,7 +35,7 @@ function SuggestionProfile() {
           </div>
 
           <div className="d-flex flex-column">
-            <div className="d-flex align-items-center gap-1"  onClick={()=>navigate('/profile')}>
+            <div className="d-flex align-items-center gap-1 suggest-name"  onClick={()=>navigate('/profile')}>
               <h6 className='mb-0'>{user.username}</h6>
             </div>
             <small className='grey-color'>{user.nickname}</small>
