@@ -7,7 +7,6 @@ import Messages from './Messages';
 import instaLogo from './assets/instaLogo.png'
 
 import { useEffect } from "react";
-import useFetch from './useFetch';
 
 function Home() {
 
@@ -17,9 +16,9 @@ function Home() {
         if (!homePage) {
             const timer = setTimeout(() => {
                 sethomePage(true);
-            }, 2000);
+            }, 1000);
 
-            return () => clearTimeout(timer); // cleanup
+            return () => clearTimeout(timer);
         }
     }, [homePage]);
 
@@ -40,10 +39,12 @@ function Home() {
                     </div>
                 ) : (
 
-                    <div className="homeLoadPage">
+                    <div className="homeLoadPage" aria-live="polite" aria-label="Loading home page">
 
                         <div className="loadingPageInstaIcon">
-                            <img src={instaLogo} alt="" className='loadingPageIcon' />
+                            <div className="loadingPageIconFrame">
+                                <img src={instaLogo} alt="" className='loadingPageIcon' />
+                            </div>
 
                         </div>
                         <div className="loadingPageCaption">

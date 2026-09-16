@@ -5,7 +5,7 @@ import API from './api';
 
 function StoryList() {
 
-    const [list] = useFetch(`${API}/stories`);
+    const [list, loading] = useFetch(`${API}/stories`);
 
     const storyRef = useRef();
 
@@ -35,6 +35,14 @@ function StoryList() {
     useEffect(() => {
         if (list?.length) checkScroll(); 
     }, [list]);
+
+    if (loading) {
+        return (
+            <div className="feedLoading storiesLoading" role="status" aria-label="Loading stories">
+                <div className="feedLoadingSpinner"></div>
+            </div>
+        );
+    }
 
     return (
         <div className="stories-wrapper position-relative">

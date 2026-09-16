@@ -5,7 +5,15 @@ import API from './api';
 
 function PostList() {
 
-    const [list] = useFetch(`${API}/posts`);
+    const [list, loading] = useFetch(`${API}/posts`);
+
+    if (loading) {
+        return (
+            <div className="feedLoading" role="status" aria-label="Loading posts">
+                <div className="feedLoadingSpinner"></div>
+            </div>
+        );
+    }
 
     const listOfPosts = list.map((p) => (
         <Post

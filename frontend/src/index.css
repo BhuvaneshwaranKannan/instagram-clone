@@ -6,17 +6,38 @@ body {
 
 /* Home Page Loading */
 
-
-.loadingPageInstaIcon {
+.homeLoadPage {
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 90vh;
+  background-color: #0c1014;
+}
+
+.loadingPageInstaIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+}
+
+.loadingPageIconFrame {
+  width: 92px;
+  height: 92px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid rgba(255, 255, 255, 0.22);
+  border-top-color: #ff0069;
+  border-right-color: #ff7a00;
+  border-radius: 50%;
+  animation: loadingRing 1.2s linear infinite;
 }
 
 .loadingPageInstaIcon img {
-  width: 75px;
+  width: 58px;
+  animation: loadingLogo 1.8s ease-in-out infinite;
 }
 
 .loadingPageCaption {
@@ -24,6 +45,24 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.loadingPageCaption h3,
+.loadingPageCaption h6 {
+  margin-bottom: 0;
+}
+
+@keyframes loadingRing {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loadingLogo {
+  50% {
+    transform: scale(0.88);
+    opacity: 0.7;
+  }
 }
 
 .lpcFrom {
@@ -183,6 +222,28 @@ body {
 
 .w-23 {
   width: 23%;
+}
+
+.feedLoading {
+  min-height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.storiesLoading {
+  min-height: 110px;
+  width: 100%;
+}
+
+.feedLoadingSpinner {
+  width: 28px;
+  height: 28px;
+  border: 3px solid rgba(255, 255, 255, 0.2);
+  border-top-color: #ff0069;
+  border-right-color: #ff7a00;
+  border-radius: 50%;
+  animation: loadingRing 0.9s linear infinite;
 }
 
 /* sidebar */
