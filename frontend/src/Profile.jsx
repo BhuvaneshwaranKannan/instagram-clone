@@ -6,6 +6,7 @@ import HighlightsList from './HighlightsList';
 import ProfilePost from './ProfilePost';
 import Messages from './Messages';
 import API from './api';
+import MobileNavigation from './MobileNavigation'
 
 function Profile() {
 
@@ -22,10 +23,11 @@ function Profile() {
 
     return (
         <>
-            <div className='d-flex vh-100'>
-                <div className='w-14'> <Sidebar /> </div>
+            <div className='d-flex vh-100 app-shell profile-shell'>
+                <MobileNavigation />
+                <div className='w-14 desktop-sidebar'> <Sidebar /> </div>
 
-                <div className='w-72'>
+                <main className='w-72 profile-main'>
 
                     {/* PROFILE HEADER */}
                     <div className="d-flex align-items-center justify-content-center mt-5">
@@ -138,11 +140,11 @@ function Profile() {
                         <span>© 2026 Instagram from Vishi</span>
                     </div>
 
-                </div>
+                </main>
 
-                <div className='w-14'></div>
+                <div className='w-14 profile-empty-column'></div>
 
-                <div><Messages /></div>
+                <div className='messages-column'><Messages /></div>
 
             </div>
 

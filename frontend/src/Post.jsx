@@ -27,13 +27,13 @@ function Post(props) {
   return (
     <>
       <div className='my-3'>
-        <div className="card" style={{ width: "29.5rem" }}>
+        <div className="card post-card">
 
           <div className="d-flex align-items-center justify-content-between">
             <div className="d-flex align-items-center">
 
               <div className="story-ring mx-2" onClick={() => navigate(`/stories/${props.id}`)}>
-                {/* 🔥 FIX */}
+                
                 <img className='profile-img' src={`${API}${props.dp}`} alt="" />
               </div>
 
@@ -68,7 +68,7 @@ function Post(props) {
           </div>
 
           <div className="postImage my-2">
-            {/* 🔥 FIX */}
+          
             <img src={`${API}${props.image}`} alt="" />
 
             {
@@ -169,7 +169,7 @@ function Post(props) {
               <div className="f-optionItem unfollowQ">
 
                 <div className="f-story-ring my-3">
-                  {/* 🔥 FIX */}
+                  
                   <img className='profile-img' src={`${API}${props.dp}`} alt="" />
                 </div>
 

@@ -3,6 +3,7 @@ import Sidebar from './Sidebar'
 import Feed from './Feed'
 import SuggestionList from './SuggestionList';
 import Messages from './Messages';
+import MobileNavigation from './MobileNavigation'
 
 import instaLogo from './assets/instaLogo.png'
 
@@ -26,15 +27,17 @@ function Home() {
         <>
             {
                 homePage ? (
-                    <div className='d-flex vh-100'>
+                    <div className='d-flex vh-100 app-shell home-shell'>
 
-                        <div className='w-14'> <Sidebar /> </div>
+                        <MobileNavigation />
 
-                        <div className='w-50'> <Feed /> </div>
+                        <div className='w-14 desktop-sidebar'> <Sidebar /> </div>
 
-                        <div className='w-23'> <SuggestionList /> </div>
+                        <main className='w-50 feed-column'> <Feed /> </main>
 
-                        <div className='w-18'> <Messages /></div>
+                        <div className='w-23 suggestion-column'> <SuggestionList /> </div>
+
+                        <div className='w-18 messages-column'> <Messages /></div>
 
                     </div>
                 ) : (
