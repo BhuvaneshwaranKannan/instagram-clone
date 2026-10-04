@@ -1,9 +1,12 @@
 import React, { useRef, useState, useEffect } from 'react'
 import useFetch from './useFetch'
 import Story from './Story';
-import API from './api'; 
+import API from './api';
 
 function StoryList() {
+
+    const [profiles] = useFetch(`${API}/profile`)
+    const profileImage = profiles?.[0]?.user?.profile_pic
 
     const [list, loading] = useFetch(`${API}/stories`);
 
@@ -33,7 +36,7 @@ function StoryList() {
     };
 
     useEffect(() => {
-        if (list?.length) checkScroll(); 
+        if (list?.length) checkScroll();
     }, [list]);
 
     if (loading) {
@@ -58,13 +61,20 @@ function StoryList() {
                 ref={storyRef}
                 onScroll={checkScroll}
             >
-                {/* ✅ FIX 2 — safe map */}
+                {profileImage && (
+                    <Story
+                        key="your-story"
+                        name="Your story"
+                        dp={profileImage}
+                        isOwn
+                    />
+                )}
                 {list?.map((st) => (
                     <Story
                         key={st.id}
                         id={st.id}
                         name={st.user.username}
-                        dp={st.user.profile_pic} 
+                        dp={st.user.profile_pic}
                     />
                 ))}
             </div>

@@ -3,12 +3,13 @@ import { Link } from 'react-router-dom'
 import API from './api';
 
 function Story(props) {
+    const destination = props.isOwn ? '/profile' : `/stories/${props.id}`
+
     return (
         <>
-            <Link to={`/stories/${props.id}`} className="story-link">
+            <Link to={destination} className="story-link">
 
-                <div className="story d-flex flex-column align-items-center mx-2">
-
+                <div className={`story d-flex flex-column align-items-center mx-2${props.isOwn ? ' your-story' : ''}`}>
                     <div className="story-dp-ring">
                         <div className="story-inner">
 
@@ -20,6 +21,8 @@ function Story(props) {
 
                         </div>
                     </div>
+
+                    {props.isOwn && <span className="your-story-add"><i className="bi bi-plus-lg" /></span>}
 
                     <div className="text-center" style={{ width: "80px" }}>
                         <p className="story-name text-truncate mb-0">

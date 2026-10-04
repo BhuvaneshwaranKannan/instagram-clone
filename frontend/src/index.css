@@ -761,6 +761,29 @@ body {
   text-decoration: none;
 }
 
+.your-story {
+  position: relative;
+}
+
+.your-story .story-dp-ring {
+  background: #363636;
+}
+
+.your-story-add {
+  position: absolute;
+  top: 84px;
+  right: 4px;
+  width: 24px;
+  height: 24px;
+  display: grid;
+  place-items: center;
+  border: 2px solid #0c1014;
+  border-radius: 50%;
+  background: #0095f6;
+  color: #fff;
+  font-size: 12px;
+}
+
 .story-name:hover {
   cursor: pointer;
 }
@@ -1770,6 +1793,11 @@ body {
     width: 75px;
     height: 75px;
     margin-top: 8px;
+  }
+
+  .your-story-add {
+    top: 56px;
+    right: 4px;
   }
 
   .scroll-btn {
