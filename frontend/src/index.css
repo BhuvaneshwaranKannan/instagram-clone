@@ -458,12 +458,20 @@ body {
 }
 
 .postFollow {
-  color: white;
+  min-height: 32px;
+  padding: 5px 14px;
+  border: 0;
+  border-radius: 7px;
+  background-color: #363636;
+  color: #fff;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 600;
 }
 
 .postFollow:hover {
   cursor: pointer;
-  text-decoration: underline;
+  background-color: #484848;
 }
 
 .postImage {
