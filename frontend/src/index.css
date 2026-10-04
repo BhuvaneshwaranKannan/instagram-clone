@@ -1652,6 +1652,11 @@ body {
 
   .mobile-top-actions:first-child button {
     font-size: 30px;
+    font-weight: bold;
+  }
+
+  .mobile-top-actions:last-child button {
+    font-weight: bold;
   }
 
   .mobile-bottom-nav {

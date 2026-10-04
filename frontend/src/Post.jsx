@@ -87,10 +87,10 @@ function Post(props) {
               <div className="p-like d-flex flex-row align-items-center mx-1">
                 {
                   like ? (
-                    <i className="reactIcon bi bi-suit-heart-fill text-danger m-1"
+                    <i className="reactIcon bi bi-suit-heart-fill text-danger"
                       onClick={() => setLike(false)}></i>
                   ) : (
-                    <i className="reactIcon bi bi-suit-heart m-1"
+                    <i className="reactIcon bi bi-suit-heart"
                       onClick={() => setLike(true)}></i>
                   )
                 }
@@ -99,17 +99,17 @@ function Post(props) {
 
               <div className="p-comments d-flex flex-row align-items-center mx-1"
                 onClick={() => setCommentBox(true)}>
-                <i className="reactIcon bi bi-chat m-1"></i>
+                <i className="reactIcon bi bi-chat"></i>
                 {props.comments}
               </div>
 
               <div className="p-repost d-flex flex-row align-items-center mx-1">
-                <i className="reactIcon bi bi-arrow-repeat m-1"></i>
+                <i className="reactIcon bi bi-arrow-repeat"></i>
                 {props.repost}
               </div>
 
               <div className="p-share d-flex flex-row align-items-center mx-1">
-                <i className="reactIcon bi bi-send m-1"></i>
+                <i className="reactIcon bi bi-send"></i>
                 {props.share}
               </div>
 
