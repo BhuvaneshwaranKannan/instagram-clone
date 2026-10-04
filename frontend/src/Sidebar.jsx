@@ -70,9 +70,7 @@ function Sidebar() {
                             <div className="navi mb-5" onClick={() => navigate('/profile')}>
                                 <div className="sidebar-dp p-2">
                                     <div className="sidebar-story-ring">
-
                                         <img className='sidebar-profile-img' src={`${API}${user.profile_pic}`} alt="" />
-
                                     </div>
                                 </div>
                                 <span className='mx-1'>Profile</span>

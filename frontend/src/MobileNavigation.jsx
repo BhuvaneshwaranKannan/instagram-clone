@@ -23,23 +23,19 @@ function MobileNavigation() {
       <nav className="mobile-bottom-nav" aria-label="Main navigation">
         <Link to="/home" aria-label="Home" aria-current={isHome ? 'page' : undefined}>
           <i className={`bi ${isHome ? 'bi-house-door-fill' : 'bi-house-door'}`} />
-          <span>Home</span>
         </Link>
         <button type="button" aria-label="Search">
           <i className="bi bi-search" />
-          <span>Search</span>
         </button>
         <button type="button" aria-label="Create">
-          <i className="bi bi-plus-square" />
-          <span>Create</span>
+          <i className="bi bi-plus" />
         </button>
         <button type="button" aria-label="Reels">
           <i className="bi bi-play-btn" />
-          <span>Reels</span>
         </button>
         <Link to="/profile" aria-label="Profile" aria-current={isProfile ? 'page' : undefined}>
-          <i className={`bi ${isProfile ? 'bi-person-circle' : 'bi-person'}`} />
-          <span>Profile</span>
+          {/* <i className={`bi ${isProfile ? 'bi-person-circle' : 'bi-person'}`} /> */}
+          <img className='sidebar-profile-img' src={`${API}${user.profile_pic}`} alt="" />
         </Link>
       </nav>
     </>
