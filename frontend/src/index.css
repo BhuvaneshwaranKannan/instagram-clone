@@ -681,7 +681,7 @@ body {
 .story-dp-ring {
   width: 95px;
   height: 95px;
-  padding: 1px;
+  padding: 3px;
   border-radius: 50%;
   background: linear-gradient(45deg, #feda75, #d62976, #962fbf);
   display: flex;
