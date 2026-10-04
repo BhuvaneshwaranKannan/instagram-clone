@@ -1535,9 +1535,8 @@ body {
     padding: 0 16px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     background: #0c1014;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   }
 
   .mobile-brand {
@@ -1624,7 +1623,6 @@ body {
     width: 28px;
     height: 28px;
     aspect-ratio: 1;
-    border: 1px solid rgba(255, 255, 255, 0.7);
     border-radius: 50%;
     object-fit: cover;
   }

@@ -14,12 +14,15 @@ function MobileNavigation() {
   return (
     <>
       <header className="mobile-topbar">
+        
+        <div className="mobile-top-actions">
+          <button type="button" aria-label="Notifications"><i className="bi bi-suit-heart" /></button>
+        </div>
         <Link to="/home" aria-label="Instagram home" className="mobile-brand">
           <img src={instaLogo} alt="" />
           <span>Instagram</span>
         </Link>
         <div className="mobile-top-actions">
-          <button type="button" aria-label="Notifications"><i className="bi bi-suit-heart" /></button>
           <button type="button" aria-label="Messages"><i className="bi bi-send" /></button>
         </div>
       </header>
