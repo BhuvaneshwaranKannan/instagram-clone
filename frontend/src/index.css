@@ -458,8 +458,12 @@ body {
 }
 
 .postFollow {
+  display: inline-flex;
+  width: 88px;
   min-height: 32px;
-  padding: 5px 14px;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 8px;
   border: 0;
   border-radius: 7px;
   background-color: #363636;
@@ -467,6 +471,8 @@ body {
   font: inherit;
   font-size: 13px;
   font-weight: 600;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .postFollow:hover {
