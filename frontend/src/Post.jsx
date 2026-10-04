@@ -40,16 +40,16 @@ function Post(props) {
               <div className="post-user-details d-flex flex-column">
                 <div className="post-identity d-flex align-items-center gap-1">
                   <h6 className='mb-0 postName'>{props.name}</h6>
-                  <span>•
+                  {/* <span>•
                     <small className='postTime p-1'>6h</small>
-                  </span>
+                  </span> */}
                 </div>
                 <small>{props.place}</small>
               </div>
 
             </div>
 
-            <div className="post-actions d-flex align-items-center gap-1 me-1">
+            <div className="post-actions d-flex align-items-center gap-1">
               {
                 follow ? (
                   <button type="button" className="postFollow" onClick={() => setUnfollowBox(true)}>Following</button>
