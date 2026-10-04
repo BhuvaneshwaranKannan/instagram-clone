@@ -1619,6 +1619,16 @@ body {
     line-height: 1;
   }
 
+  .mobile-profile-img {
+    display: block;
+    width: 28px;
+    height: 28px;
+    aspect-ratio: 1;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
   .mobile-bottom-nav span {
     max-width: 100%;
     overflow: hidden;
