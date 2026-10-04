@@ -470,7 +470,7 @@ body {
 .post-user {
   flex: 1 1 auto;
   min-width: 0;
-  gap: 8px;
+  gap: 4px;
 }
 
 .post-user-details {
