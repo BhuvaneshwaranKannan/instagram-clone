@@ -130,9 +130,11 @@ function Post(props) {
 
           <div>
             <p className='mx-2'>
-              {props.name}
+              <span>
+                {props.name}
+              </span>
               <small>
-                <span>
+                <span className='post-down-caption mx-2'>
                   {props.caption}
                 </span>
                   ...<small className='captionMore text-muted'><span>more</span></small>

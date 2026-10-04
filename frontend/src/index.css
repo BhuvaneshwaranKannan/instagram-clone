@@ -549,6 +549,10 @@ body {
   cursor: pointer;
 }
 
+.post-down-caption {
+  color: #484848;
+}
+
 .p-like,
 .p-comments,
 .p-repost,
