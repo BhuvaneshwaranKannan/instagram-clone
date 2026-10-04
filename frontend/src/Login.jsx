@@ -62,7 +62,7 @@ function Login() {
 
                                     <button 
                                         className="btn btn-primary w-100 mb-3 custom-btn" 
-                                        onClick={() => navigate('/home')}
+                                        onClick={() => navigate('/home', { state: { showHomeLoader: true } })}
                                     >
                                         Log in
                                     </button>

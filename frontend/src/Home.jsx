@@ -1,23 +1,30 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Sidebar from './Sidebar'
 import Feed from './Feed'
 import SuggestionList from './SuggestionList';
 import Messages from './Messages';
 import MobileNavigation from './MobileNavigation'
+import { useLocation, useNavigate } from 'react-router-dom'
 
 import instaLogo from './assets/instaLogo.png'
 
-import { useEffect } from "react";
-
 function Home() {
 
-    const [homePage, sethomePage] = useState(false)
+    const location = useLocation()
+    const navigate = useNavigate()
+    const [homePage, sethomePage] = useState(() => !location.state?.showHomeLoader)
+
+    useEffect(() => {
+        if (location.state?.showHomeLoader) {
+            navigate(location.pathname, { replace: true, state: null })
+        }
+    }, [location.pathname, location.state, navigate])
 
     useEffect(() => {
         if (!homePage) {
             const timer = setTimeout(() => {
                 sethomePage(true);
-            }, 1000);
+            }, 2000);
 
             return () => clearTimeout(timer);
         }
