@@ -10,6 +10,7 @@ function Post(props) {
   const [save, setSave] = useState(false);
   const [like, setLike] = useState(false);
   const [commentBox, setCommentBox] = useState(false);
+  const [saveIcon, setSaveIcon] = useState(false);
 
   const [follow, setFollow] = useState(false);
   const [unfollowBox, setUnfollowBox] = useState(false);
@@ -117,12 +118,12 @@ function Post(props) {
 
             <div>
               {
-                save ? (
+                saveIcon ? (
                   <i className="reactIcon pSave bi bi-bookmark-fill mx-2"
-                    onClick={() => setSave(false)}></i>
+                    onClick={() => {setSave(false); setSaveIcon(false)}}></i>
                 ) : (
                   <i className="reactIcon pSave bi bi-bookmark mx-2"
-                    onClick={() => setSave(true)}></i>
+                    onClick={() => {setSave(true); setSaveIcon(true)}}></i>
                 )
               }
             </div>

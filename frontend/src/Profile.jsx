@@ -16,7 +16,7 @@ function Profile() {
     const navigate = useNavigate();
 
     if (!list || list.length === 0) {
-        return <div>Loading...</div>;
+        return <div>...</div>;
     }
 
     const user = list[0].user;
