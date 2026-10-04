@@ -16,14 +16,14 @@ function MobileNavigation() {
       <header className="mobile-topbar">
         
         <div className="mobile-top-actions">
-          <button type="button" aria-label="Notifications"><i className="bi bi-suit-heart" /></button>
+          <button type="button" aria-label="Create"><i className="bi bi-plus" /></button>
         </div>
         <Link to="/home" aria-label="Instagram home" className="mobile-brand">
           <img src={instaLogo} alt="" />
           <span>Instagram</span>
         </Link>
         <div className="mobile-top-actions">
-          <button type="button" aria-label="Messages"><i className="bi bi-send" /></button>
+          <button type="button" aria-label="Notifications"><i className="bi bi-suit-heart" /></button>
         </div>
       </header>
 
@@ -34,7 +34,7 @@ function MobileNavigation() {
         <button type="button" aria-label="Reels">
           <i className="bi bi-play-btn" />
         </button>
-        <button type="button" aria-label="Create">
+        <button type="button" aria-label="Messages">
           <i className="bi bi-send" />
         </button>
         <button type="button" aria-label="Search">
