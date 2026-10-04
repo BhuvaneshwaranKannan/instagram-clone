@@ -49,7 +49,7 @@ function Post(props) {
 
             </div>
 
-            <div className="d-flex align-items-center gap-3 me-2">
+            <div className="d-flex align-items-center gap-1 me-1">
               {
                 follow ? (
                   <span className="postFollow" onClick={() => setUnfollowBox(true)}>Following</span>
