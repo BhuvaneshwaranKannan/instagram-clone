@@ -29,16 +29,16 @@ function Post(props) {
       <div className='my-3'>
         <div className="card post-card">
 
-          <div className="d-flex align-items-center justify-content-between">
-            <div className="d-flex align-items-center">
+          <div className="post-header d-flex align-items-center justify-content-between">
+            <div className="post-user d-flex align-items-center">
 
               <div className="story-ring mx-2" onClick={() => navigate(`/stories/${props.id}`)}>
                 
                 <img className='profile-img' src={`${API}${props.dp}`} alt="" />
               </div>
 
-              <div className="d-flex flex-column">
-                <div className="d-flex align-items-center gap-1">
+              <div className="post-user-details d-flex flex-column">
+                <div className="post-identity d-flex align-items-center gap-1">
                   <h6 className='mb-0 postName'>{props.name}</h6>
                   <span>•
                     <small className='postTime p-1'>6h</small>
@@ -49,7 +49,7 @@ function Post(props) {
 
             </div>
 
-            <div className="d-flex align-items-center gap-1 me-1">
+            <div className="post-actions d-flex align-items-center gap-1 me-1">
               {
                 follow ? (
                   <button type="button" className="postFollow" onClick={() => setUnfollowBox(true)}>Following</button>

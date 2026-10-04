@@ -454,7 +454,48 @@ body {
 }
 
 .postName {
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   cursor: pointer;
+}
+
+.post-header {
+  min-height: 56px;
+  gap: 8px;
+  padding: 4px 8px 4px 0;
+}
+
+.post-user {
+  flex: 1 1 auto;
+  min-width: 0;
+  gap: 8px;
+}
+
+.post-user-details {
+  flex: 1 1 auto;
+  min-width: 0;
+  line-height: 1.25;
+}
+
+.post-identity {
+  min-width: 0;
+  flex-wrap: nowrap;
+}
+
+.post-identity .postName {
+  min-width: 0;
+}
+
+.post-identity > span {
+  flex: 0 0 auto;
+  white-space: nowrap;
+}
+
+.post-actions {
+  flex: 0 0 auto;
+  white-space: nowrap;
 }
 
 .postFollow {
@@ -1547,14 +1588,15 @@ body {
     z-index: 1000;
     height: 54px;
     padding: 0 16px;
-    display: flex;
+    display: grid;
+    grid-template-columns: minmax(40px, 1fr) auto minmax(40px, 1fr);
     align-items: center;
-    justify-content: space-between;
     background: #0c1014;
   }
 
   .mobile-brand {
     display: inline-flex;
+    justify-self: center;
     align-items: center;
     gap: 8px;
     color: #fff;
@@ -1576,6 +1618,14 @@ body {
     gap: 18px;
   }
 
+  .mobile-top-actions:first-child {
+    justify-self: start;
+  }
+
+  .mobile-top-actions:last-child {
+    justify-self: end;
+  }
+
   .mobile-top-actions button,
   .mobile-bottom-nav button,
   .mobile-bottom-nav a {
@@ -1594,6 +1644,10 @@ body {
     padding: 0;
     color: white;
     font-size: 22px;
+  }
+
+  .mobile-top-actions:first-child button {
+    font-size: 30px;
   }
 
   .mobile-bottom-nav {
