@@ -7,24 +7,29 @@ import PostList from './PostList'
 import ViewStory from './ViewStory'
 import Profile from './Profile'
 
-const router = createBrowserRouter([
+const router = createBrowserRouter(
+  [
+    {
+      path: '/',
+      element: <Login />
+    },
+    {
+      path: '/home',
+      element: <Home />
+    },
+    {
+      path: '/stories/:id',
+      element: <ViewStory />
+    },
+    {
+      path: '/profile',
+      element: <Profile />
+    }
+  ],
   {
-    path: '/',
-    element: <Login />
-  },
-  {
-    path: '/home',
-    element: <Home />
-  },
-  {
-    path: '/stories/:id',
-    element: <ViewStory />
-  },
-  {
-    path: '/profile',
-    element: <Profile />
+    basename: '/instagram-clone'
   }
-]);
+);
 
 function App() {
   return (
@@ -34,4 +39,4 @@ function App() {
 
 export default App
 
-// npx json-server --watch db/db.json --port 3000 --static ./db   
+// npx json-server --watch db/db.json --port 3000 --static ./db
