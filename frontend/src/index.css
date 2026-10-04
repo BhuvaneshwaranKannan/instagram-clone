@@ -1591,7 +1591,7 @@ body {
     inset: 0 0 auto;
     z-index: 1000;
     height: 54px;
-    padding: 0 16px;
+    padding: 0 5px;
     display: grid;
     grid-template-columns: minmax(40px, 1fr) auto minmax(40px, 1fr);
     align-items: center;
